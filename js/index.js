@@ -111,10 +111,18 @@ newAnchor.textContent = 'Links';
 newAnchor.href = '#';
 newAnchor.setAttribute("style", "color: Green;");
 
-const navAppend = document.querySelector('nav')
+const contact = document.querySelector('.contact h4');
+contact.innerText = 'Contact'
 
-const contact = document.querySelector('.contact')
+counter = 0;
 
+addressArrar = ["123 Way 456 Street Somewhere, USA", "1(888) 888 - 8888", "sales@greatidea.io"]
+const address = document.querySelectorAll('.contact p');
+address.forEach(function (element) {
+  element.innerText = addressArrar[counter];
+  counter = counter + 1;
+})
 
-  
+const footer = document.querySelector('footer');
+footer.innerHTML = 'Copyright Great Idea! 2018'
 
