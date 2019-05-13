@@ -53,16 +53,22 @@ middle.setAttribute("src", "img/mid-page-accent.jpg");
 
 let navItem1 = document.getElementsByTagName('a');
 navItem1[0].text = 'Services';
+navItem1[0].setAttribute("style", "color: Green;");
 let navItem2 = document.getElementsByTagName('a');
 navItem2[1].text = 'Product';
+navItem2[1].setAttribute("style", "color: Green;");
 let navItem3 = document.getElementsByTagName('a');
 navItem3[2].text = 'Vision';
+navItem3[2].setAttribute("style", "color: Green;");
 let navItem4 = document.getElementsByTagName('a');
 navItem4[3].text = 'Features';
+navItem4[3].setAttribute("style", "color: Green;");
 let navItem5 = document.getElementsByTagName('a');
 navItem5[4].text = 'About';
+navItem5[4].setAttribute("style", "color: Green;");
 let navItem6 = document.getElementsByTagName('a');
 navItem6[5].text = 'Contact';
+navItem6[5].setAttribute("style", "color: Green;");
 
 // let ctaText = document.getElementsByClassName('cta-text');
 // ctaText[0].innerHTML = 'DOM IS AWSOME';
@@ -93,6 +99,19 @@ paraGraph1.forEach(function (element) {
   counter += 1;
 })
 
+let anchor = document.createElement('a')
+document.querySelector('nav').appendChild(anchor)
+anchor.textContent = 'Link';
+anchor.href = '#';
+anchor.setAttribute("style", "color: Green;");
+
+let newAnchor = document.createElement('a')
+document.querySelector('nav').appendChild(newAnchor)
+newAnchor.textContent = 'Links';
+newAnchor.href = '#';
+newAnchor.setAttribute("style", "color: Green;");
+
+const navAppend = document.querySelector('nav')
 
 const contact = document.querySelector('.contact')
 
