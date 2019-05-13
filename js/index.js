@@ -37,6 +37,30 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// // Example: Update the img src for the logo
+let logo = document.querySelector("#logo-img");
+logo.setAttribute("src", "img/logo.png")
+
+let cta = document.querySelector("#cta-img");
+cta.setAttribute("src", "img/header-img.png");
+
+let middle = document.querySelector("#middle-img");
+middle.setAttribute("src", "img/mid-page-accent.jpg");
+
+// 
+
+// Set all Nav links correctly (Probably an easier way using a for each.. but just get it working first!)
+
+let navItem1 = document.getElementsByTagName('a');
+navItem1[0].text = 'Services';
+let navItem2 = document.getElementsByTagName('a');
+navItem2[1].text = 'Product';
+let navItem3 = document.getElementsByTagName('a');
+navItem3[2].text = 'Vision';
+let navItem4 = document.getElementsByTagName('a');
+navItem4[3].text = 'Features';
+let navItem5 = document.getElementsByTagName('a');
+navItem5[4].text = 'About';
+let navItem6 = document.getElementsByTagName('a');
+navItem6[5].text = 'Contact';
+
