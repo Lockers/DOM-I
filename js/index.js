@@ -64,3 +64,38 @@ navItem5[4].text = 'About';
 let navItem6 = document.getElementsByTagName('a');
 navItem6[5].text = 'Contact';
 
+// let ctaText = document.getElementsByClassName('cta-text');
+// ctaText[0].innerHTML = 'DOM IS AWSOME';
+
+// const buttonText = document.querySelector('.cta-text button');
+
+const test1 = document.querySelector('h1');
+test1.innerText = 'DOM \n IS \n AWSOME'
+// test1.style.justifyContent = 'flex-start'
+
+
+const test2 = document.querySelector('button')
+test2.innerText = 'Get Started';
+
+arrayStuff = ['Features', 'About', 'Services', 'Product', 'Vision']
+const test3 = document.querySelectorAll('h4');
+let counter = 0
+test3.forEach(function (element) {
+  element.innerText = arrayStuff[counter];
+  counter += 1;
+})
+
+counter = 0;
+
+const paraGraph1 = document.querySelectorAll('.main-content p');
+paraGraph1.forEach(function (element) {
+  element.innerText = `${arrayStuff[counter]} content elementum magna eros, ac posuere elvit tempus et.Suspendisse vel tempus odio, in interdutm nisi.Suspendisse eu ornare nisl.Nullam convallis augue justo, at imperdiet metus scelerisque quis.`
+  counter += 1;
+})
+
+
+const contact = document.querySelector('.contact')
+
+
+  
+
