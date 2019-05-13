@@ -77,11 +77,12 @@ navItem6[5].setAttribute("style", "color: Green;");
 
 const test1 = document.querySelector('h1');
 test1.innerText = 'DOM \n IS \n AWSOME'
-// test1.style.justifyContent = 'flex-start'
+// test1.style.marginRight = '40px'
 
 
 const test2 = document.querySelector('button')
 test2.innerText = 'Get Started';
+// test1.style.marginRight = '90px'
 
 arrayStuff = ['Features', 'About', 'Services', 'Product', 'Vision']
 const test3 = document.querySelectorAll('h4');
