@@ -37,6 +37,93 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+// // Example: Update the img src for the logo
+let logo = document.querySelector("#logo-img");
+logo.setAttribute("src", "img/logo.png")
+
+let cta = document.querySelector("#cta-img");
+cta.setAttribute("src", "img/header-img.png");
+
+let middle = document.querySelector("#middle-img");
+middle.setAttribute("src", "img/mid-page-accent.jpg");
+
+// 
+
+// Set all Nav links correctly (Probably an easier way using a for each.. but just get it working first!)
+
+let navItem1 = document.getElementsByTagName('a');
+navItem1[0].text = 'Services';
+navItem1[0].setAttribute("style", "color: Green;");
+let navItem2 = document.getElementsByTagName('a');
+navItem2[1].text = 'Product';
+navItem2[1].setAttribute("style", "color: Green;");
+let navItem3 = document.getElementsByTagName('a');
+navItem3[2].text = 'Vision';
+navItem3[2].setAttribute("style", "color: Green;");
+let navItem4 = document.getElementsByTagName('a');
+navItem4[3].text = 'Features';
+navItem4[3].setAttribute("style", "color: Green;");
+let navItem5 = document.getElementsByTagName('a');
+navItem5[4].text = 'About';
+navItem5[4].setAttribute("style", "color: Green;");
+let navItem6 = document.getElementsByTagName('a');
+navItem6[5].text = 'Contact';
+navItem6[5].setAttribute("style", "color: Green;");
+
+// let ctaText = document.getElementsByClassName('cta-text');
+// ctaText[0].innerHTML = 'DOM IS AWSOME';
+
+// const buttonText = document.querySelector('.cta-text button');
+
+const test1 = document.querySelector('h1');
+test1.innerText = 'DOM \n IS \n AWSOME'
+// test1.style.marginRight = '40px'
+
+
+const test2 = document.querySelector('button')
+test2.innerText = 'Get Started';
+// test1.style.marginRight = '90px'
+
+arrayStuff = ['Features', 'About', 'Services', 'Product', 'Vision']
+const test3 = document.querySelectorAll('h4');
+let counter = 0
+test3.forEach(function (element) {
+  element.innerText = arrayStuff[counter];
+  counter += 1;
+})
+
+counter = 0;
+
+const paraGraph1 = document.querySelectorAll('.main-content p');
+paraGraph1.forEach(function (element) {
+  element.innerText = `${arrayStuff[counter]} content elementum magna eros, ac posuere elvit tempus et.Suspendisse vel tempus odio, in interdutm nisi.Suspendisse eu ornare nisl.Nullam convallis augue justo, at imperdiet metus scelerisque quis.`
+  counter += 1;
+})
+
+let anchor = document.createElement('a')
+document.querySelector('nav').appendChild(anchor)
+anchor.textContent = 'Link';
+anchor.href = '#';
+anchor.setAttribute("style", "color: Green;");
+
+let newAnchor = document.createElement('a')
+document.querySelector('nav').appendChild(newAnchor)
+newAnchor.textContent = 'Links';
+newAnchor.href = '#';
+newAnchor.setAttribute("style", "color: Green;");
+
+const contact = document.querySelector('.contact h4');
+contact.innerText = 'Contact'
+
+counter = 0;
+
+addressArrar = ["123 Way 456 Street Somewhere, USA", "1(888) 888 - 8888", "sales@greatidea.io"]
+const address = document.querySelectorAll('.contact p');
+address.forEach(function (element) {
+  element.innerText = addressArrar[counter];
+  counter = counter + 1;
+})
+
+const footer = document.querySelector('footer');
+footer.innerHTML = 'Copyright Great Idea! 2018'
+
